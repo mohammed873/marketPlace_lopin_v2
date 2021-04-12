@@ -1,0 +1,51 @@
+.big_wrapper{
+    display: flex;
+    height: 88vh;
+    justify-content: center;
+    align-items: center;
+}
+.buyer_wrapper{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: auto;
+    height: 56vh;
+    box-shadow: 0px 0px 0px 3px #a0787826
+}
+
+.buter_info{
+    width: 36%;
+    background-color: #484141;
+    color: white;
+}
+
+.chat_container{
+    width: 64%;
+    background-color: #f3f2f2;
+    color: rgb(19, 17, 17);
+    height: 51vh;
+    overflow-x: auto;
+}
+.form_container{
+    position: absolute;
+}
+
+@media only screen and (max-width: 1240px) {
+    .buyer_wrapper{
+        width: 90%;
+       flex-direction: column;
+       height: auto;
+    }
+    .chat_container{
+        width: 100%;
+        background-color: #f3f2f2;
+        color: rgb(19, 17, 17);
+        height: 405px;
+    }
+    .buter_info{
+        width: 100%;
+        background-color: #484141;
+        color: white;
+        height: 300px;
+    }
+  }

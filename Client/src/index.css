@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.category-container, .seller-container,.ads-container, .admins-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.category-container h1{
+    font-size: 40px;
+  }
+.seller-container h1{
+    font-size: 40px;
+  }
+
+.add-category-form form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+.category-container table button {
+    background: none;
+    border: none;
+    outline: none;
+}
+.seller-container table button {
+    background: none;
+    border: none;
+    outline: none;
+}
+.ads-container table button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.admins-container table button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.category-container table{
+    text-align: center;
+}
+.seller-container table{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.add-admin-form form{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.ads-container table{
+  text-align: center;
+}
+
+.admins-container table{
+  text-align: center;
+}
+
+.ads-container img {
+  height: 50px;
+  width: auto;
+}
+.orders-container img {
+  height: 50px;
+  width: auto;
+}
+
+.ads-container table td{
+  vertical-align: middle;
+}
+
+.ads-container h1{
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+.admins-container h1{
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+.admins-container img{
+  height : 500px;
+  width: auto;
+  margin-top: 100px;
+}
+
+.statistics-container h1{
+  font-size: 40px;
+  text-align: center;
+  margin : 40px 0;
+}
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+
