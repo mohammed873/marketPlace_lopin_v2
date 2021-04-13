@@ -128,6 +128,7 @@ exports.getProduct = async (req, res, next) => {
     res.status(400).send({ message: error.message });
   }
 };
+
 exports.getProductsByUserId = async (req, res, next) => {
   try {
     const products = await Product.find({ id_seller: req.params.id });

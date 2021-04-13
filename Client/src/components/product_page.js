@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button'
 
 export default function ProductPage() {
   const [products, setProducts] = useState([])
+  const [auctionProduct, setAuctionProduct] = useState([])
   const [ad, setAd] = useState([])
   const [currency, setCurrency] = useState([])
   const buyer = localStorage.getItem('token')
@@ -13,6 +14,7 @@ export default function ProductPage() {
   useEffect(() => {
     getRandomAdd()
     getProducts()
+    getAuctionProducts()
     currencyChange()
   }, [])
 
@@ -34,6 +36,18 @@ export default function ProductPage() {
       .then((response) => {
         const allProducts = response.data
         setProducts(allProducts)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
+  async function getAuctionProducts() {
+    await axios
+      .get('http://localhost:5000/auction/getAll')
+      .then((response) => {
+        const allProducts = response.data
+        setAuctionProduct(allProducts[0])
       })
       .catch((error) => {
         console.log(error)
@@ -77,7 +91,7 @@ export default function ProductPage() {
         />
       </div>
       <br />
-      {buyer ? (
+      {buyer && auctionProduct ? (
         <Link to='/Auction'>
           <div
             style={{

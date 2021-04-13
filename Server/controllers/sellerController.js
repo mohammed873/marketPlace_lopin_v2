@@ -119,27 +119,6 @@ exports.getAllSellers = async (req, res, next) => {
   }
 }
 
-// exports.sellerPack = async (req, res, next) => {
-//   const token = req.header("auth-token");
-
-//   const id_seller = jwt.verify(token, process.env.SELLER_TOKEN)._id;
-
-//   const type = req.body.type;
-
-//   const seller = await Seller.findById({ _id: id_seller });
-//   if (type == "Pro") {
-//     seller.type = type;
-//     seller.turnOver += 5000;
-
-//     const updateSeller = await seller.save();
-//     res.status(201).send(updateSeller);
-//   } else if (type == "Expert") {
-//     seller.type = type;
-//     seller.turnOver += 20000;
-//     const updateSeller = await seller.save();
-//     res.status(201).send(updateSeller);
-//   }
-// };
 
 exports.deleteSeller = async (req, res, next) => {
   try {

@@ -13,6 +13,8 @@ import ResetPassword from './ResetPassword'
 import ProductList from './product_page'
 import card from './card'
 import Auction from './Auction'
+import AuctionPayment from './AuctionPayment'
+import ProductSold from './ProductSold'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -133,6 +135,8 @@ export default function Home({ history }) {
       <Route path='/ResetPassword' exact component={ResetPassword} />
       <Route path='/Product/:id' component={card} />
       <Route path='/Auction' component={Auction} />
+      <Route path='/AuctionPayment' component={AuctionPayment} />
+      <Route path='/ProductSold' component={ProductSold} />
     </div>
   )
 }

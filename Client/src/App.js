@@ -24,6 +24,7 @@ function App() {
         <Route path='/Admin/Delivery' exact component={AdminDashboard} />
         <Route path='/Admin/Orders' exact component={AdminDashboard} />
         <Route path='/Admin/Admins' exact component={AdminDashboard} />
+        <Route path='/Admin/Auction' exact component={AdminDashboard} />
         <Route path='/Seller/Dashboard' exact component={SellerDashboard} />
         <Route path='/Seller/Info' exact component={SellerDashboard} />
         <Route path='/Seller/Products' exact component={SellerDashboard} />
@@ -34,6 +35,8 @@ function App() {
         <Route path='/ResetPassword' exact component={Home} />
         <Route path='/Product/:id' exact component={Home} />
         <Route path='/Auction' component={Home} />
+        <Route path='/AuctionPayment' component={Home} />
+        <Route path='/ProductSold' component={Home} />
       </Switch>
     </Router>
   )

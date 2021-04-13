@@ -1,6 +1,6 @@
 .big_wrapper{
     display: flex;
-    height: 88vh;
+    height: 62vh;
     justify-content: center;
     align-items: center;
 }
@@ -23,12 +23,20 @@
     width: 64%;
     background-color: #f3f2f2;
     color: rgb(19, 17, 17);
-    height: 51vh;
+    height: 47.6vh;
     overflow-x: auto;
 }
 .form_container{
     position: absolute;
+    background-color: #484141;
+    padding: 1%;
+    top: auto;
+    width: 38.7%;
 }
+.form_container input{
+    margin-left: -17px;
+}
+
 
 @media only screen and (max-width: 1240px) {
     .buyer_wrapper{
